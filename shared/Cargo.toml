@@ -1,0 +1,11 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+cgmath = { version = "0.18", features = ["serde"] }
+serde = { version = "1.0.210", features = ["derive"] }
